@@ -33,12 +33,12 @@
 ;;(pdf-tools-install)
 
 ;;;; Slime
-;(require 'slime-autoloads)
-;(setq slime-lisp-implementations
-;      '((sbcl ("sbcl"))
-;	(ecl ("ecl") :coding-system utf-8-unix)))
-;(add-to-list 'slime-contribs 'slime-fancy)
-;(slime-setup '(slime-company))
+(require 'slime-autoloads)
+(setq slime-lisp-implementations
+      '((sbcl ("sbcl"))
+	(ecl ("ecl") :coding-system utf-8-unix)))
+(add-to-list 'slime-contribs 'slime-fancy)
+(slime-setup '(slime-company))
 
 ;;;; Dired
 (add-hook 'dired-mode-hook 'ggtags-mode)
