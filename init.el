@@ -55,6 +55,8 @@
 ;; Advanced usage.
 (add-to-list 'company-backends '(company-jedi company-files))
 (add-to-list 'company-backends 'company-go)
+(add-to-list 'company-backends 'company-ghc)
+(add-to-list 'company-backends 'company-ghci)
 
 ;;;; C mode
 (setq c-default-style "linux"
@@ -84,6 +86,14 @@
 ;;;; Python mode
 (require 'elpy)
 (add-hook 'python-mode-hook 'elpy-enable)
+
+;;;; Haskell mode
+(require 'flymake-haskell-multi)
+(add-hook 'haskell-mode-hook 'flymake-haskell-multi-load)
+(require 'flymake-hlint)
+(add-hook 'haskell-mode-hook 'flymake-hlint-load)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
