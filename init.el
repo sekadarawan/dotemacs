@@ -41,16 +41,16 @@
  '(haskell-mode-hook
    (quote
     (flymake-haskell-multi-load flymake-hlint-load turn-on-haskell-indentation)) t)
- '(inhibit-startup-screen t)
  '(major-mode (quote text-mode))
  '(go-mode-hook (quote (flymake-go-load)) t)
  '(ruby-mode-hook (quote (flymake-ruby-load)) t)
  '(prog-mode-hook (quote (company-mode nlinum-mode yas-minor-mode)) t)
  '(python-mode-hook (quote (elpy-mode)) t)
- '(scroll-bar-mode nil)
  '(sh-basic-offset 2)
  '(sh-set-shell-hook (quote (flymake-shell-load)))
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
+ '(inhibit-startup-screen t)
+ '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
