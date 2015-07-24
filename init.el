@@ -48,12 +48,13 @@
  '(elpy-rpc-backend "jedi")
  '(fci-rule-color "#151515")
  '(coffee-mode-hook (quote (flymake-coffee-load)) t)
- '(css-mode-hook (qoute (flymake-css-load)) t)
- '(js-mode-hook (quote (flymake-jshint-load)) t)
+ '(css-mode-hook (quote (flymake-css-load)) t)
+ '(js-mode-hook (quote (flymake-jshint-load flymake-jslint-load)) t)
  '(go-mode-hook (quote (flymake-go-load)) t)
  '(haskell-mode-hook
    (quote
     (flymake-haskell-multi-load flymake-hlint-load turn-on-haskell-indentation)) t)
+ '(lua-mode-hook (quote (flymake-lua-load)) t)
  '(inhibit-startup-screen t)
  '(list-directory-brief-switches "--group-directories-first -lh")
  '(list-directory-verbose-switches "-alh")
