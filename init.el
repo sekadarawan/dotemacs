@@ -40,6 +40,7 @@
     ("05c3bc4eb1219953a4f182e10de1f7466d28987f48d647c01f1f0037ff35ab9a" "8288b9b453cdd2398339a9fd0cec94105bc5ca79b86695bd7bf0381b1fbe8147" default)))
  '(delete-by-moving-to-trash t)
  '(dired-dwim-target t)
+ '(dired-listing-switches "-alh")
  '(dired-mode-hook (quote (ggtags-mode)))
  '(elpy-interactive-python-command "ipython")
  '(elpy-mode-hook (quote (subword-mode hl-line-mode)))
@@ -50,8 +51,8 @@
    (quote
     (flymake-haskell-multi-load flymake-hlint-load turn-on-haskell-indentation)) t)
  '(inhibit-startup-screen t)
- '(list-directory-brief-switches "--group-directories-first")
- '(list-directory-verbose-switches "-lh")
+ '(list-directory-brief-switches "--group-directories-first -lh")
+ '(list-directory-verbose-switches "-alh")
  '(major-mode (quote text-mode))
  '(prog-mode-hook (quote (company-mode nlinum-mode yas-minor-mode)) t)
  '(python-mode-hook (quote (elpy-mode)) t)
