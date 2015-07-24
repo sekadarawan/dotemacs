@@ -6,7 +6,7 @@
 (require 'dired-details+)
 (require 'helm-config)
 (require 'powerline)
-(powerline-default-theme)
+(powerline-center-theme)
 
 (require 'haml-mode)
 (require 'sass-mode)
@@ -54,11 +54,11 @@
  '(css-mode-hook (quote (flymake-css-load)) t)
  '(sccs-mode-hook (quote (flymake-sass-load)) t)
  '(sass-mode-hook (quote (flymake-sass-load)) t)
- '(js-mode-hook (quote (flymake-jshint-load flymake-jslint-load)) t)
+ '(js-mode-hook (quote (flymake-jshint-load flymake-jslint-load glasses-mode)) t)
  '(go-mode-hook (quote (flymake-go-load)) t)
  '(haskell-mode-hook
    (quote
-    (flymake-haskell-multi-load flymake-hlint-load turn-on-haskell-indentation)) t)
+    (flymake-haskell-multi-load flymake-hlint-load turn-on-haskell-indentation glasses-mode)) t)
  '(lua-mode-hook (quote (flymake-lua-load)) t)
  '(inhibit-startup-screen t)
  '(list-directory-brief-switches "--group-directories-first -lh")
@@ -66,7 +66,7 @@
  '(major-mode (quote text-mode))
  '(prog-mode-hook (quote (company-mode nlinum-mode yas-minor-mode)) t)
  '(python-mode-hook (quote (elpy-mode)) t)
- '(ruby-mode-hook (quote (flymake-ruby-load)) t)
+ '(ruby-mode-hook (quote (flymake-ruby-load glasses-mode)) t)
  '(scroll-bar-mode nil)
  '(sh-basic-offset 2)
  '(sh-set-shell-hook (quote (flymake-shell-load)))
