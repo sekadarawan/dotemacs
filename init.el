@@ -49,6 +49,7 @@
  '(fci-rule-color "#151515")
  '(coffee-mode-hook (quote (flymake-coffee-load)) t)
  '(css-mode-hook (qoute (flymake-css-load)) t)
+ '(js-mode-hook (quote (flymake-jshint-load)) t)
  '(go-mode-hook (quote (flymake-go-load)) t)
  '(haskell-mode-hook
    (quote
