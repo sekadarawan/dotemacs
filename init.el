@@ -4,9 +4,12 @@
 (package-initialize)
 
 (require 'dired-details+)
-
+(require 'helm-config)
 (require 'powerline)
 (powerline-default-theme)
+
+(require 'haml-mode)
+(require 'sass-mode)
 
 (require 'slime-autoloads)
 (setq slime-lisp-implementations
@@ -49,6 +52,8 @@
  '(fci-rule-color "#151515")
  '(coffee-mode-hook (quote (flymake-coffee-load)) t)
  '(css-mode-hook (quote (flymake-css-load)) t)
+ '(sccs-mode-hook (quote (flymake-sass-load)) t)
+ '(sass-mode-hook (quote (flymake-sass-load)) t)
  '(js-mode-hook (quote (flymake-jshint-load flymake-jslint-load)) t)
  '(go-mode-hook (quote (flymake-go-load)) t)
  '(haskell-mode-hook
