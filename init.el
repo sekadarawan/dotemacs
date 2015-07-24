@@ -47,7 +47,7 @@
  '(delete-by-moving-to-trash t)
  '(dired-dwim-target t)
  '(dired-hide-details-hide-symlink-targets nil)
- '(dired-listing-switches "-lh")
+ '(dired-listing-switches "--group-directories-first -lh")
  '(dired-mode-hook (quote (ggtags-mode)))
  '(elpy-interactive-python-command "ipython")
  '(elpy-mode-hook (quote (subword-mode hl-line-mode)))
@@ -61,7 +61,7 @@
    (quote
     (flymake-jshint-load flymake-jslint-load glasses-mode)) t)
  '(list-directory-brief-switches "--group-directories-first -lh")
- '(list-directory-verbose-switches "-alh")
+ '(list-directory-verbose-switches "--group-directories-first -alh")
  '(lua-mode-hook (quote (flymake-lua-load)) t)
  '(major-mode (quote text-mode))
  '(prog-mode-hook (quote (company-mode nlinum-mode yas-minor-mode)) t)
