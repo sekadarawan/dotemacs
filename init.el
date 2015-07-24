@@ -34,7 +34,7 @@
  '(custom-safe-themes
    (quote
     ("8288b9b453cdd2398339a9fd0cec94105bc5ca79b86695bd7bf0381b1fbe8147" default)))
- '(dired-mode-hook (quote (dired-extra-startup ggtags-mode)))
+ '(dired-mode-hook (quote (ggtags-mode)))
  '(elpy-interactive-python-command "ipython")
  '(elpy-mode-hook (quote (subword-mode hl-line-mode)))
  '(elpy-rpc-backend "jedi")
