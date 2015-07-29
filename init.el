@@ -38,7 +38,7 @@
 		  (company-dabbrev-code company-gtags company-etags company-keywords)
 		  company-oddmuse company-files company-dabbrev company-c-headers
 		  (company-jedi company-files)
-		  company-go company-ghc company-ghci)))
+		  company-go company-ghc company-ghci company-web-html company-web-jade company-web-slim)))
  '(css-mode-hook (quote (flymake-css-load)) t)
  '(custom-enabled-themes (quote (smyx)))
  '(custom-safe-themes
@@ -67,6 +67,7 @@
  '(prog-mode-hook (quote (company-mode nlinum-mode yas-minor-mode)) t)
  '(python-mode-hook (quote (elpy-mode)) t)
  '(ruby-mode-hook (quote (flymake-ruby-load glasses-mode)) t)
+ '(rust-mode-hook (quote (flymake-rust-load)) t)
  '(sass-mode-hook (quote (flymake-sass-load)))
  '(sccs-mode-hook (quote (flymake-sass-load)) t)
  '(scroll-bar-mode nil)
