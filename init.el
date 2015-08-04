@@ -11,6 +11,7 @@
 (require 'powerline)
 (powerline-center-theme)
 
+(require 'flymake-rust)
 (require 'haml-mode)
 (require 'sass-mode)
 
