@@ -50,6 +50,7 @@
  '(dired-hide-details-hide-symlink-targets nil)
  '(dired-listing-switches "--group-directories-first -lh")
  '(dired-mode-hook (quote (ggtags-mode)))
+ '(diredp-toggle-find-file-reuse-dir 1)
  '(elpy-interactive-python-command "ipython")
  '(elpy-mode-hook (quote (subword-mode hl-line-mode)))
  '(elpy-rpc-backend "jedi")
