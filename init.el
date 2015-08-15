@@ -57,6 +57,7 @@
 		  company-oddmuse company-files company-dabbrev company-c-headers
 		  (company-jedi company-files)
 		  company-go company-ghc company-ghci company-web-html company-web-jade company-web-slim)))
+ '(css-indent-offset 2)
  '(css-mode-hook (quote (flymake-css-load)) t)
  '(custom-enabled-themes (quote (smyx)))
  '(custom-safe-themes
