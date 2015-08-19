@@ -89,7 +89,7 @@
  '(ruby-mode-hook (quote (flymake-ruby-load glasses-mode)) t)
  '(rust-mode-hook (quote (flymake-rust-load)) t)
  '(sass-mode-hook (quote (flymake-sass-load)))
- '(sccs-mode-hook (quote (flymake-sass-load)) t)
+ '(scss-mode-hook (quote (flymake-sass-load)) t)
  '(scroll-bar-mode nil)
  '(sh-basic-offset 2)
  '(sh-set-shell-hook (quote (flymake-shell-load)))
