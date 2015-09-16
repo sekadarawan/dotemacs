@@ -48,6 +48,7 @@
  '(c-default-style
    (quote
     ((c-mode . "linux")
+     (c++-mode . "linux")
      (java-mode . "java")
      (awk-mode . "awk")
      (other . "gnu"))))
@@ -91,8 +92,8 @@
  '(ruby-mode-hook (quote (flymake-ruby-load glasses-mode)) t)
  '(rust-mode-hook (quote (flymake-rust-load)) t)
  '(sass-mode-hook (quote (flymake-sass-load)))
- '(scss-mode-hook (quote (flymake-sass-load)) t)
  '(scroll-bar-mode nil)
+ '(scss-mode-hook (quote (flymake-sass-load)) t)
  '(sh-basic-offset 2)
  '(sh-set-shell-hook (quote (flymake-shell-load)))
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
