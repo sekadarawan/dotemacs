@@ -24,6 +24,9 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 
+(require 'haxe-mode)
+(add-to-list 'auto-mode-alist '("\\.hx\\'" . haxe-mode))
+
 (defun my-web-mode-hook ()
   "Hooks for web-mode."
   (setq web-mode-markup-indent-offset 2)
