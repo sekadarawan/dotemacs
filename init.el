@@ -11,11 +11,25 @@
 (require 'powerline)
 (powerline-center-theme)
 
-(require 'flymake-rust)
 (require 'haml-mode)
-(require 'sass-mode)
-(require 'web-mode)
+
+(require 'prog-mode)
+(require 'css-mode)
+(require 'coffee-mode)
+(require 'd-mode)
+(require 'go-mode)
+(require 'haxe-mode)
 (require 'js2-mode)
+(require 'json-mode)
+(require 'lua-mode)
+(require 'rust-mode)
+(require 'sass-mode)
+(require 'scss-mode)
+(require 'web-mode)
+
+;; flymake
+(require 'flymake-rust)
+
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
@@ -25,10 +39,7 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
-
 (add-to-list 'interpreter-mode-alist '("node" . js2-mode))
-
-(require 'haxe-mode)
 (add-to-list 'auto-mode-alist '("\\.hx\\'" . haxe-mode))
 
 (defun my-web-mode-hook ()
@@ -59,20 +70,20 @@
      (java-mode . "java")
      (awk-mode . "awk")
      (other . "gnu"))))
- '(coffee-mode-hook (quote (flymake-coffee-load)) t)
+ '(coffee-mode-hook (quote (flymake-coffee-load)))
  '(company-backends
    (quote
     (company-bbdb company-nxml company-css company-eclim company-semantic company-clang company-cmake company-capf
 		  (company-dabbrev-code company-gtags company-etags company-keywords)
 		  company-oddmuse company-files company-dabbrev company-c-headers
 		  (company-jedi company-files)
-		  company-go company-ghc company-ghci company-web-html company-web-jade company-web-slim)))
+		  company-go company-ghc company-ghci company-web-html company-web-jade company-web-slim company-dcd)))
  '(css-indent-offset 2)
  '(css-mode-hook (quote (flymake-css-load)) t)
- '(custom-enabled-themes (quote (smyx)))
+ '(custom-enabled-themes (quote (monokai)))
  '(custom-safe-themes
    (quote
-    ("8288b9b453cdd2398339a9fd0cec94105bc5ca79b86695bd7bf0381b1fbe8147" default)))
+    ("0a1a7f64f8785ffbf5b5fbe8bca1ee1d9e1fb5e505ad9a0f184499fe6747c1af" "8288b9b453cdd2398339a9fd0cec94105bc5ca79b86695bd7bf0381b1fbe8147" default)))
  '(delete-by-moving-to-trash t)
  '(dired-dwim-target t)
  '(dired-hide-details-hide-symlink-targets nil)
@@ -82,19 +93,19 @@
  '(elpy-interactive-python-command "ipython")
  '(elpy-mode-hook (quote (subword-mode hl-line-mode)))
  '(elpy-rpc-backend "jedi")
- '(go-mode-hook (quote (flymake-go-load)) t)
+ '(go-mode-hook (quote (flymake-go-load)))
  '(haskell-mode-hook
    (quote
     (flymake-haskell-multi-load flymake-hlint-load turn-on-haskell-indentation glasses-mode)) t)
  '(inhibit-startup-screen t)
- '(js-mode-hook
+ '(js2-mode-hook
    (quote
     (flymake-jshint-load flymake-jslint-load glasses-mode)) t)
  '(list-directory-brief-switches "--group-directories-first -lh")
  '(list-directory-verbose-switches "--group-directories-first -alh")
- '(lua-mode-hook (quote (flymake-lua-load)) t)
+ '(lua-mode-hook (quote (love/possibly-enable-mode flymake-lua-load)))
  '(major-mode (quote text-mode))
- '(prog-mode-hook (quote (company-mode nlinum-mode yas-minor-mode)) t)
+ '(prog-mode-hook (quote (company-mode nlinum-mode yas-minor-mode rainbow-delimiters-mode rainbow-identifiers-mode)) t)
  '(python-mode-hook (quote (elpy-mode)) t)
  '(ruby-mode-hook (quote (flymake-ruby-load glasses-mode)) t)
  '(rust-mode-hook (quote (flymake-rust-load)) t)
